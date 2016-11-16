@@ -10,7 +10,7 @@ public class LaborCamp extends Ownable {
 	
 	@Override
 	public int getRent() {
-		// TODO Auto-generated method stub
+
 		return 0;
 	}
 	
