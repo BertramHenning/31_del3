@@ -13,6 +13,12 @@ public class Territory extends Ownable {
 		return rent;
 	}
 
+	@Override
+	public void landOnField(Player player) {
+		// TODO Auto-generated method stub
+
+	}
+
 	
 	
 }
