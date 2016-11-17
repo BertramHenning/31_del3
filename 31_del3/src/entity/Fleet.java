@@ -12,18 +12,17 @@ public class Fleet extends Ownable {
 		super(price,owner);
 		
 	}
-	
-	
-	
-	
-	
 	@Override
 	public int getRent() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 	
-	
+	@Override
+	public void landOnField(Player player) {
+		// TODO Auto-generated method stub
+
+	}
 	
 	
 	

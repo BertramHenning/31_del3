@@ -8,4 +8,11 @@ public class Refuge extends Field{
 		
 	}
 
+	@Override
+	public void landOnField(Player player) {
+		player.addPoints(bonus);
+		
+	}
+
+	
 }

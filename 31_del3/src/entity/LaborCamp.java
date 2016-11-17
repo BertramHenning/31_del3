@@ -14,7 +14,11 @@ public class LaborCamp extends Ownable {
 		return 0;
 	}
 	
-	
+	@Override
+	public void landOnField(Player player) {
+		// TODO Auto-generated method stub
+
+	}
 	
 
 }
