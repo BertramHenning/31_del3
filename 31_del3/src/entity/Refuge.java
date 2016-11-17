@@ -1,5 +1,11 @@
 package entity;
 
-public class Refuge {
+public class Refuge extends Field{
+	private int bonus;
+	
+	public Refuge(int bonus){
+		this.bonus = bonus;
+		
+	}
 
 }
