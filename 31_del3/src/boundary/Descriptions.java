@@ -4,7 +4,7 @@ import java.awt.Color;
 
 public class Descriptions {
 	
-	protected static String [] fieldNames = {
+	protected static String[] fieldNames = {
 			"Tribe Encampment",
 			"Crater",
 			"Mountain",
@@ -128,7 +128,7 @@ public class Descriptions {
 			
 			}
 	
-	protected static Color [] fieldColor = {}
+	protected static Color[] fieldColor = {}
 			
 		
 			}
