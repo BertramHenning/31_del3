@@ -8,8 +8,8 @@ public class Fleet extends Ownable {
 	private final int RENT_4 = 4000;
 	
 	
-	public Fleet(int price, Player owner){
-		super(price,owner);
+	public Fleet(int price){
+		super(price);
 		
 	}
 	
