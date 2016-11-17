@@ -6,7 +6,7 @@ public class Account {
 	private int coins;
 	
 	public Account() {
-		coins = 1000;
+		coins = 30000;
 
 	}
 
