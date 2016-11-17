@@ -5,9 +5,9 @@ public abstract class Ownable extends Field {
 	private int price;
 	private Player owner;
 	
-public Ownable(int price, Player owner){
-	this.price=price;
-	this.owner=owner;
+public Ownable(int price){
+	this.price = price;
+	this.owner = null;
 	
 }
 	
