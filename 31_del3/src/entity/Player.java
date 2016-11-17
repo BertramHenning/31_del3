@@ -2,7 +2,7 @@ package entity;
 
 public class Player {
 
-	private int current;
+	private int current, laborcamps = 0, fleets = 0;
 	private String name;
 
 	private Account points;
@@ -28,6 +28,22 @@ public class Player {
 
 	public void setCurrent(int current) {
 		this.current = current;
+	}
+
+	public int getLaborcamps() {
+		return laborcamps;
+	}
+
+	public void setLaborcamps(int laborcamps) {
+		this.laborcamps = laborcamps;
+	}
+
+	public int getFleets() {
+		return fleets;
+	}
+
+	public void setFleets(int fleets) {
+		this.fleets = fleets;
 	}
 
 	public String toString() {
