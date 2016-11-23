@@ -4,8 +4,8 @@ public class Dice {
 
 	private int value;
 
-	public Dice(int a) {
-		value = a;
+	public Dice() {
+		value = 6;
 	}
 
 	// Randomizes value from 1-6
