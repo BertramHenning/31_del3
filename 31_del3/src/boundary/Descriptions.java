@@ -8,7 +8,7 @@ public class Descriptions {
 			"Tribe Encampment",
 			"Crater",
 			"Mountain",
-			"Second Sail" // Fleet
+			"Second Sail", // Fleet
 			"Cold Desert",
 			"Goldmine", // Tax
 			"Black Cave",
@@ -26,31 +26,31 @@ public class Descriptions {
 			"The Pit", // Labor Camp
 			"Castle",
 			"Monastery" // Refuge
-			}	
+			};	
 	
-	protected static int[] fieldPrice = {
+	protected static int[] fieldValue = {
 			1000,
 			1500,
 			2000,
 			4000, // Fleet
 			3000,
-			0, // Tax
+			2000, // Tax
 			4000, 
 			4000, // Fleet
 			2500, // Labor Camp
 			4300, 
-			0, // Refuge
+			5000, // Refuge
 			4750,
 			5000, 
 			4000, // Fleet
 			5500, 
-			0, // Tax
+			4000, // Tax
 			6000,
 			4000, // Fleet
 			2500, // Labor Camp
 			8000,
-			0 // Tax
-			}
+			500 // refuge
+			};
 		
 	protected static int[] fieldRent = {
 			100,
@@ -74,58 +74,10 @@ public class Descriptions {
 			100, // Labor Camp
 			4000,
 			0, // Refuge
-			}
-	
-	protected static int[] fieldPay = {
-			0,
-			0,
-			0,
-			0, // Fleet
-			0,
-			2000, // Tax
-			0,
-			0, // Fleet
-			0, // Labor Camp
-			0,
-			0, // Refuge
-			0,
-			0,
-			0, // Fleet
-			0,
-			4000, // Tax
-			0,
-			0, // Fleet
-			0, // Labor Camp
-			0,
-			0, // Refuge
-			}
-	
-	protected static int[] fieldReceive = {
-			0,
-			0,
-			0,
-			0, // Fleet
-			0,
-			0, // Tax
-			0,
-			0, // Fleet
-			0, // Labor Camp
-			0,
-			5000, // Refuge
-			0,
-			0,
-			0, // Fleet
-			0,
-			0, // Tax
-			0,
-			0, // Fleet
-			0, // Labor Camp
-			0,
-			500, // Refuge			
-			}
+			};
 	
 	protected static String[] fieldDescription = {
-			"You have discovered a" + fieldNames[0] + "on your journey!" + "\n" + "Do you want to buy it for" + fiedPrice[0] + "coins?" + "\n" + "The Rent is" + fieldRent[0] "coins.",
+			"You have discovered a Tribe Encampment on your journey!" + "\n" + "Do you want to buy it for 1000 coins?" + "\n" + "The Rent is 100 coins.",
 			"An extraordinary Crater has been found!" + "\n" + "Do you want to buy it for 1500 coins?" + "\n" + "The Rent is 300 coins.",
 			"You have finally ascended the legendary Mountain!" + "\n" + "Do you want to buy it for 2000 coins?" + "\n" + "The Rent is 500 coins.",
 			"The Sea Coast have been reached with plenty of ships to sail!" + "\n" + "Do you want to buy it for 4000 coins?" + "\n" + "The Rent is 500-4000 coins." + "\n" + "1 Fleet: 500 coins." + "\n" + "2 Fleets: 1000 coins." +  "\n" + "3 Fleets: 2000 coins." + "\n" + "4 Fleets: 4000 coins.", // Fleet
@@ -146,12 +98,12 @@ public class Descriptions {
 			"You have discovered a labor camp called The Pit." + "\n" + "Do you want to buy it for 2500 coins?" + "\n" + "The Rent is 100 coins * dice roll value.", // Labor Camp
 			"The Royal Castle is bankrupt after several wars!" + "\n" + "Do you want to buy it for 8000 coins?" + "\n" + "The Rent is 4000 coins.",
 			"You have finally found piece in the Monastery and received 500 coins." // Refuge
-			}
+			};
 	
-	protected static Color[] fieldColor = {}
+	protected static Color[] fieldColor = {
 			
 		
-			}
+			};
 	
 
 }
