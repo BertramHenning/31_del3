@@ -39,6 +39,10 @@ public class GameBoard {
 		return "GameBoard [fields=" + Arrays.toString(fields) + "] \n";
 	}
 	
+	public Field getField(int position){
+		return fields[position];		
+	}
+	
 	
 	
 	
