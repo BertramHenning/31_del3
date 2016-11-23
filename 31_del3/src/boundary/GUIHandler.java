@@ -13,7 +13,7 @@ public class GUIHandler {
 		Field[] fields = new Field[21];
 		
 		for (int i = 0; i < 21; i++){
-				fields[i] = new Street.Builder()//.setBgColor(Descriptions.fieldColor[i])
+				fields[i] = new Street.Builder() //.setBgColor(Descriptions.fieldColor[i])
 						.setDescription(Descriptions.fieldDescription[i])
 						.setTitle(Descriptions.fieldNames[i])
 						.setSubText("" + Descriptions.fieldValue[i])
