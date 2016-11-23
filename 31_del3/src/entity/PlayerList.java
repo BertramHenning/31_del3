@@ -20,12 +20,12 @@ public class PlayerList {
 		return list[player].getPoints();
 	}
 
-	public int getCurrent(int player) {
-		return list[player].getCurrent();
+	public int getPosition(int player) {
+		return list[player].getPosition();
 	}
 
-	public void setCurrent(int player, int current) {
-		list[player].setCurrent(current);;
+	public void setPosition(int player, int position) {
+		list[player].setPosition(position);
 	}
 	
 	public boolean checkWin(int player){
