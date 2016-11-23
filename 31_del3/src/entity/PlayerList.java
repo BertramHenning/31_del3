@@ -56,4 +56,8 @@ public class PlayerList {
 	public String getName(int a){
 		return list[a].toString();
 	}
+	
+	public Player getPlayer(int a){
+		return list[a];
+	}
 }
