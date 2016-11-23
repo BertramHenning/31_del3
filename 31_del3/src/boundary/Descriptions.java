@@ -49,7 +49,7 @@ public class Descriptions {
 			4000, // Fleet
 			2500, // Labor Camp
 			8000,
-			500 // refuge
+			500 // Refuge
 			};
 		
 	protected static int[] fieldRent = {
