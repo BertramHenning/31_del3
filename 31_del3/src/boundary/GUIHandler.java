@@ -50,8 +50,16 @@ public class GUIHandler {
 		GUI.showMessage(message);
 	}
 	
-	public boolean askPlayer(String message){
+	public boolean askTrueFalse(String message){
 		return GUI.getUserLeftButtonPressed(message, "Ja", "Nej");
+	}
+	
+	public int askAmount(String message, int min, int max){
+		return GUI.getUserInteger(message, min, max);
+	}
+	
+	public String askString(String message){
+		return GUI.getUserString(message);
 	}
 
 }

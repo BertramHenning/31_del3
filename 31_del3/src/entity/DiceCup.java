@@ -5,6 +5,9 @@ public class DiceCup {
  	
 public DiceCup(int amount){
 	cup = new Dice[amount];
+	for (int i = 0; i < cup.length; i++){
+		cup[i] = new Dice();
+	}
 }
 
 public void rollDice(){

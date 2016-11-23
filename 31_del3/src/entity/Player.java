@@ -2,7 +2,7 @@ package entity;
 
 public class Player {
 
-	private int position, laborcamps = 0, fleets = 0;
+	private int position = 0, laborcamps = 0, fleets = 0;
 	private String name;
 
 	private Account points;
@@ -26,8 +26,12 @@ public class Player {
 		return position;
 	}
 
-	public void setPosition(int position) {
-		this.position = position;
+	public void movePosition(int amount) {
+		this.position += amount;
+		if (this.position > 20){
+			this.position = this.position - 21;
+		}
+		
 	}
 
 	public int getLaborcamps() {
