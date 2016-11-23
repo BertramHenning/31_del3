@@ -13,52 +13,20 @@ public class GUIHandler {
 		Field[] fields = new Field[21];
 		
 		for (int i = 0; i < 21; i++){
-			switch(i){
-			case 3:
-			case 7:
-			case 13:
-			case 17:
-				fields[i] = new Street.Builder().setBgColor(Descriptions.fieldColor[i])
+				fields[i] = new Street.Builder()//.setBgColor(Descriptions.fieldColor[i])
 						.setDescription(Descriptions.fieldDescription[i])
 						.setTitle(Descriptions.fieldNames[i])
-						.setSubText("" + Descriptions.fieldPrice[i])
+						.setSubText("" + Descriptions.fieldValue[i])
 						.build();
-				break;
-			case 5:
-			case 15:
-				fields[i] = new Street.Builder().setBgColor(Descriptions.fieldColor[i])
-						.setDescription(Descriptions.fieldDescription[i])
-						.setTitle(Descriptions.fieldNames[i])
-						.setSubText("" + Descriptions.fieldPay[i])
-						.build();
-				break;
-			case 8:
-			case 18:
-				fields[i] = new Street.Builder().setBgColor(Descriptions.fieldColor[i])
-						.setDescription(Descriptions.fieldDescription[i])
-						.setTitle(Descriptions.fieldNames[i])
-						.setSubText("" + Descriptions.fieldPrice[i])
-						.build();
-				break;
-			case 10:
-			case 20:
-				fields[i] = new Street.Builder().setBgColor(Descriptions.fieldColor[i])
-						.setDescription(Descriptions.fieldDescription[i])
-						.setTitle(Descriptions.fieldNames[i])
-						.setSubText("" + Descriptions.fieldReceive[i])
-						.build();
-				break;
-			default:
-				fields[i] = new Street.Builder().setBgColor(Descriptions.fieldColor[i])
-						.setDescription(Descriptions.fieldDescription[i])
-						.setTitle(Descriptions.fieldNames[i])
-						.setSubText("" + Descriptions.fieldPrice[i])
-						.build();
-				break;
-			}
 		}
 		
 		GUI.create(fields);
+		
+		GUI.setDice(1, 2);
+	}
+	
+	public void setDice(int a, int b){
+		GUI.setDice(a, b);
 	}
 	
 	
