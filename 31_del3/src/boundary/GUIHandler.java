@@ -21,12 +21,18 @@ public class GUIHandler {
 		}
 		
 		GUI.create(fields);
-		
-		GUI.setDice(1, 2);
 	}
 	
 	public void setDice(int a, int b){
 		GUI.setDice(a, b);
+	}
+	
+	public void addPlayer(String name){
+		GUI.addPlayer(name, 30000);
+	}
+	
+	public void removeCar(String name){
+		GUI.removeAllCars(name);
 	}
 	
 	
