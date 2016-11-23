@@ -28,7 +28,7 @@ public class Descriptions {
 			"Monastery" // Refuge
 			};	
 	
-	protected static int[] fieldPrice = {
+	protected static int[] fieldValue = {
 			1000,
 			1500,
 			2000,
