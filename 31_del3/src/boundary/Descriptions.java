@@ -125,9 +125,32 @@ public class Descriptions {
 			};
 	
 	protected static Color[] fieldColor = {
-			
-		
+			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
+			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
+			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
+			Color.getHSBColor((float)0.63,(float) 0.73,(float) 0.57), //fleet
+			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
+			Color.getHSBColor((float)0.15,(float) 1.00,(float) 0.90), //tax
+			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
+			Color.getHSBColor((float)0.630,(float) 0.73,(float) 0.57), //fleet
+			Color.getHSBColor((float)0.00,(float) 0.00,(float) 0.25), //labor camp
+			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
+			Color.getHSBColor((float)0.00,(float) 0.00,(float) 1.00), //refuge
+			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
+			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
+			Color.getHSBColor((float)0.630,(float) 0.73,(float) 0.57), //fleet
+			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
+			Color.getHSBColor((float)0.15,(float) 1.00,(float) 0.90), //tax
+			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
+			Color.getHSBColor((float)0.630,(float) 0.73,(float) 0.57), //fleet
+			Color.getHSBColor((float)0.00,(float) 0.00,(float) 0.25), //labor camp
+			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
+			Color.getHSBColor((float)0.00,(float) 0.00,(float) 1.00), //refuge	
 			};
 	
 
 }
+
+	
+
+
