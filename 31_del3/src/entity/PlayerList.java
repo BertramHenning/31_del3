@@ -43,6 +43,7 @@ public class PlayerList {
 			}
 		}
 		list = newlist;
+		playerAmount--;
 	}
 
 	public int getPlayerAmount() {
@@ -51,6 +52,14 @@ public class PlayerList {
 
 	public void setPlayerAmount(int playerAmount) {
 		this.playerAmount = playerAmount;
+	}
+	
+	public int getDiceSum(int a){
+		return list[a].getDiceSum();
+	}
+	
+	public void setDiceSum(int player, int sum){
+		list[player].setDiceSum(sum);
 	}
 	
 	public String getName(int a){
