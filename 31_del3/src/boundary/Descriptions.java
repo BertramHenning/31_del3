@@ -4,6 +4,7 @@ import java.awt.Color;
 
 public class Descriptions {
 	
+	// Create Array list with field names
 	protected static String[] fieldNames = {
 			"Tribe Encampment",
 			"Crater",
@@ -28,6 +29,7 @@ public class Descriptions {
 			"Monastery" // Refuge
 			};	
 	
+	// Create Array list with fieldValues
 	protected static int[] fieldValue = {
 			1000,
 			1500,
@@ -52,6 +54,7 @@ public class Descriptions {
 			500 // Refuge
 			};
 		
+	// Create Array list with fieldRents
 	protected static int[] fieldRent = {
 			100,
 			300,
@@ -76,6 +79,7 @@ public class Descriptions {
 			0, // Refuge
 			};
 	
+	// Create Array list with field descriptions
 	protected static String[] fieldDescription = {
 			"The Rent is 100 coins.",
 			"The Rent is 300 coins.",
@@ -100,6 +104,7 @@ public class Descriptions {
 			"You have finally found piece in the Monastery and received 500 coins." // Refuge
 			};
 	
+	// Create Array list with asking questions
 	protected static String[] fieldAsk = {
 			"You have discovered a Tribe Encampment on your journey!" + "\n" + "Do you want to buy it for 1000 coins?",
 			"An extraordinary Crater has been found!" + "\n" + "Do you want to buy it for 1500 coins?",
@@ -124,6 +129,7 @@ public class Descriptions {
 			""
 			};
 	
+	// Create Array list with field colors
 	protected static Color[] fieldColor = {
 			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
 			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
@@ -147,8 +153,6 @@ public class Descriptions {
 			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
 			Color.getHSBColor((float)0.00,(float) 0.00,(float) 1.00), //refuge	
 			};
-	
-
 }
 
 	
