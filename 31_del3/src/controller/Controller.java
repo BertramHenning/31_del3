@@ -9,9 +9,8 @@ public class Controller {
 	private GUIHandler gui;
 	private GameBoard board;
 	private PlayerList list;
-	public DiceCup cup;
+	private DiceCup cup;
 	private int turn = 0;
-	
 
 	public Controller() {
 		gui = new GUIHandler();
@@ -19,39 +18,54 @@ public class Controller {
 		cup = new DiceCup(2);
 	}
 
-	public void startGame(){
+	public void startGame() {
 		gui.createBoard();
+		gui.showMessage("Rules: \nA game consist of 2-6 players and each player starts with 30000 coins. The objective of the game is to bankrupt the other players, meaning their coin total reached zero. To do this each player must buy properties to make his/her opponents pay rent when they land on the player's field. The players take turns rolling two dice and the game will move them to the according field. The game ends when all but one player has gone bankrupt.");
 		addPlayers();
-		for ( int i = 0; i < list.getPlayerAmount(); i++){
+		for (int i = 0; i < list.getPlayerAmount(); i++) {
 			System.out.println(i);
 			gui.addPlayer(list.getName(i));
 		}
-		while(true){
-			gui.showMessage("It's your turn " + list.getName(turn)+", press OK to roll dice");
+		while (true) {
+			if (list.getPlayerAmount() == 1 ){
+				gui.showMessage("Congratulations " + list.getName(turn) + " you won the game!");
+				break;
+			}
 			
+			gui.showMessage("It's your turn " + list.getName(turn) + ", press OK to roll dice");
+
 			cup.rollDice();
 			gui.setDice(cup.getFaceValue(0), cup.getFaceValue(1));
-			
+			list.setDiceSum(turn, cup.getSum());
+
 			list.movePosition(turn, cup.getSum());
 			gui.moveCar(list.getName(turn), list.getPosition(turn));
-			
+
 			board.getField(list.getPosition(turn) - 1).landOnField(list.getPlayer(turn));
+
+			for (int i = 0; i < list.getPlayerAmount(); i++) {
+				gui.displayBalance(list.getName(i), list.getCoins(i));
+			}
 			
-			gui.displayBalance(list.getName(turn), list.getCoins(turn));
-			
+			if (list.getCoins(turn) <= 0){
+				gui.removeCar(list.getName(turn));
+				gui.showMessage(list.getName(turn) + ", you've been bankrupted by your friends, thanks for playing!");
+				list.removePlayer(turn);
+			}
+
 			turn++;
-			if (turn > list.getPlayerAmount()){
+			if (turn >= list.getPlayerAmount()) {
 				turn = 0;
 			}
 		}
-		
+
 	}
-	
-	public void addPlayers(){
+
+	public void addPlayers() {
 		int playerAmount = gui.askAmount("Enter player amount between 2 and 6:", 2, 6);
 		String[] names = new String[playerAmount];
-		for (int i = 0; i < playerAmount; i++){
-			names[i] = gui.askString("Player "+ (i+1) + " enter your name:");
+		for (int i = 0; i < playerAmount; i++) {
+			names[i] = gui.askString("Player " + (i + 1) + " enter your name:");
 		}
 		list = new PlayerList(playerAmount, names);
 	}
