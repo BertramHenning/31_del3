@@ -1,5 +1,6 @@
 package entity;
 
+import boundary.Descriptions;
 import desktop_resources.GUI;
 
 public class Territory extends Ownable {
@@ -18,15 +19,18 @@ public class Territory extends Ownable {
 	@Override
 	public void landOnField(Player player) {
 		if (owner == null && player.getCoins() > price) {
-			if (GUI.getUserLeftButtonPressed("Do you want to purchase this territory for " + price + "?", "Yes", "No")) {
+			if (GUI.getUserLeftButtonPressed(Descriptions.fieldAsk[player.getPosition() - 1], "Yes",
+					"No")) {
 				owner = player;
 				player.addCoins(-price);
 			}
 		} else if (owner == null) {
 			GUI.showMessage("You dont have enough coins to buy this territory");
+		} else if (owner == player) {
+			GUI.showMessage("You have landed on your own territory");
 		} else {
 			GUI.showMessage(
-					"You have landed on " + owner.toString() + "'s territory and have to pay him " + rent + "coins");
+					"You have landed on " + owner.toString() + "'s territory and have to pay him " + rent + " coins");
 			if (player.getCoins() > rent) {
 				player.addCoins(-rent);
 				owner.addCoins(rent);
@@ -35,7 +39,6 @@ public class Territory extends Ownable {
 				player.addCoins(-rent);
 			}
 		}
-
 	}
 
 }

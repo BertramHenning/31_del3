@@ -4,7 +4,7 @@ import java.awt.Color;
 
 public class Descriptions {
 	
-	protected static String[] fieldNames = {
+	public static String[] fieldNames = {
 			"Tribe Encampment",
 			"Crater",
 			"Mountain",
@@ -28,7 +28,7 @@ public class Descriptions {
 			"Monastery" // Refuge
 			};	
 	
-	protected static int[] fieldValue = {
+	public static int[] fieldValue = {
 			1000,
 			1500,
 			2000,
@@ -52,7 +52,7 @@ public class Descriptions {
 			500 // Refuge
 			};
 		
-	protected static int[] fieldRent = {
+	public static int[] fieldRent = {
 			100,
 			300,
 			500,
@@ -76,7 +76,7 @@ public class Descriptions {
 			0, // Refuge
 			};
 	
-	protected static String[] fieldDescription = {
+	public static String[] fieldDescription = {
 			"The Rent is 100 coins.",
 			"The Rent is 300 coins.",
 			"The Rent is 500 coins.",
@@ -100,7 +100,7 @@ public class Descriptions {
 			"You have finally found piece in the Monastery and received 500 coins." // Refuge
 			};
 	
-	protected static String[] fieldAsk = {
+	public static String[] fieldAsk = {
 			"You have discovered a Tribe Encampment on your journey!" + "\n" + "Do you want to buy it for 1000 coins?",
 			"An extraordinary Crater has been found!" + "\n" + "Do you want to buy it for 1500 coins?",
 			"You have finally ascended the legendary Mountain!" + "\n" + "Do you want to buy it for 2000 coins?",
@@ -113,10 +113,10 @@ public class Descriptions {
 			"It is dark night with a full moon. The Werewall has appeared from the darkness!" + "\n" + "Do you want to buy it for 4300 coins?",
 			"", // Refuge
 			"You have found a Mountain Village on journey." + "\n" + "Do you want to buy it for 4750 coins?",
-			"You have reached a beautiful city, called the South Citadel, on your journey!" + "\n" + "Do you want to buy it for 5000 coins?",
+			"You have reached a beautiful city called the South Citadel on your journey!" + "\n" + "Do you want to buy it for 5000 coins?",
 			"Arrrgh!! You have found the pirates, called 'The Buccaneers', fleet base" + "\n" + "Do you want to buy it for 4000 coins?", // Fleet
 			"You have found the Holy Palace Gates!" + "\n" + "Do you want to buy it for 5500 coins?",
-			"A Caravan approached you! You generosity forced you to spend either 4000 coins or 10% of your total assets. Choose wisely", // Tax
+			"A Caravan approached you! Your generosity forced you to spend either 4000 coins or 10% of your total assets. Choose wisely", // Tax
 			"You have entered a heavily guarded Tower!" + "\n" + "Do you want to buy it for 6000 coins?",
 			"You have found a fleet base called 'Privateer Armade'" + "\n" + "Do you want to buy it for 4000 coins?", // Fleet
 			"You have discovered a labor camp called The Pit." + "\n" + "Do you want to buy it for 2500 coins?", // Labor Camp
@@ -124,7 +124,7 @@ public class Descriptions {
 			""
 			};
 	
-	protected static Color[] fieldColor = {
+	public static Color[] fieldColor = {
 			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
 			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
 			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
