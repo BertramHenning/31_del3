@@ -10,7 +10,7 @@ public class Tax extends Field {
 	
 	@Override
 	public void landOnField(Player player) {
-		player.addPoints(taxAmount);
+		player.addCoins(taxAmount);
 	
 	}
 
