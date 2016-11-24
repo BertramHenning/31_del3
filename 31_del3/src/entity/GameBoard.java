@@ -14,22 +14,22 @@ public class GameBoard {
 			case 7:
 			case 13:
 			case 17:
-				fields[i] = new Fleet(1);
+				fields[i] = new Fleet(Descriptions.fieldValue[i]);
 				break;
 			case 5:
 			case 15:
-				fields[i] = new Tax(1);
+				fields[i] = new Tax(Descriptions.fieldValue[i]);
 				break;
 			case 8:
 			case 18:
-				fields[i] = new LaborCamp(1, 1);
+				fields[i] = new LaborCamp(Descriptions.fieldValue[i], 100);
 				break;
 			case 10:
 			case 20:
-				fields[i] = new Refuge(1);
+				fields[i] = new Refuge(Descriptions.fieldValue[i]);
 				break;
 			default:
-				fields[i] = new Territory(1, 1);
+				fields[i] = new Territory(Descriptions.fieldValue[i], Descriptions.fieldRent[i]);
 				break;
 			}
 		}
@@ -37,6 +37,10 @@ public class GameBoard {
 
 	public String toString() {
 		return "GameBoard [fields=" + Arrays.toString(fields) + "] \n";
+	}
+	
+	public Field getField(int position){
+		return fields[position];		
 	}
 	
 	

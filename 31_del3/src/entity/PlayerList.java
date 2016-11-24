@@ -13,12 +13,12 @@ public class PlayerList {
 		}
 	}
 
-	public void addPoints(int player, int amount) {
-		list[player].addPoints(amount);
+	public void addCoins(int player, int amount) {
+		list[player].addCoins(amount);
 	}
 
-	public int getPoints(int player) {
-		return list[player].getPoints();
+	public int getCoins(int player) {
+		return list[player].getCoins();
 	}
 
 	public int getPosition(int player) {
@@ -55,5 +55,9 @@ public class PlayerList {
 	
 	public String getName(int a){
 		return list[a].toString();
+	}
+	
+	public Player getPlayer(int a){
+		return list[a];
 	}
 }

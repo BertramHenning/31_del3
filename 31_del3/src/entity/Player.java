@@ -13,12 +13,12 @@ public class Player {
 	}
 	
 	// Adds score to Account object
-	public void addPoints(int a) {
+	public void addCoins(int a) {
 		points.addCoins(a);
 	}
 
 	// Gets score from Account object
-	public int getPoints() {
+	public int getCoins() {
 		return points.getCoins();
 	}
 
