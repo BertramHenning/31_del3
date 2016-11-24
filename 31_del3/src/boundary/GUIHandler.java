@@ -51,7 +51,7 @@ public class GUIHandler {
 	}
 	
 	public boolean askTrueFalse(String message){
-		return GUI.getUserLeftButtonPressed(message, "Ja", "Nej");
+		return GUI.getUserLeftButtonPressed(message, "Yes", "No");
 	}
 	
 	public int askAmount(String message, int min, int max){
