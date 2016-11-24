@@ -4,7 +4,7 @@ import java.awt.Color;
 
 public class Descriptions {
 	
-	protected static String[] fieldNames = {
+	public static String[] fieldNames = {
 			"Tribe Encampment",
 			"Crater",
 			"Mountain",
@@ -28,7 +28,7 @@ public class Descriptions {
 			"Monastery" // Refuge
 			};	
 	
-	protected static int[] fieldValue = {
+	public static int[] fieldValue = {
 			1000,
 			1500,
 			2000,
@@ -52,7 +52,7 @@ public class Descriptions {
 			500 // Refuge
 			};
 		
-	protected static int[] fieldRent = {
+	public static int[] fieldRent = {
 			100,
 			300,
 			500,
@@ -76,7 +76,7 @@ public class Descriptions {
 			0, // Refuge
 			};
 	
-	protected static String[] fieldDescription = {
+	public static String[] fieldDescription = {
 			"The Rent is 100 coins.",
 			"The Rent is 300 coins.",
 			"The Rent is 500 coins.",
@@ -100,7 +100,7 @@ public class Descriptions {
 			"You have finally found piece in the Monastery and received 500 coins." // Refuge
 			};
 	
-	protected static String[] fieldAsk = {
+	public static String[] fieldAsk = {
 			"You have discovered a Tribe Encampment on your journey!" + "\n" + "Do you want to buy it for 1000 coins?",
 			"An extraordinary Crater has been found!" + "\n" + "Do you want to buy it for 1500 coins?",
 			"You have finally ascended the legendary Mountain!" + "\n" + "Do you want to buy it for 2000 coins?",
@@ -124,7 +124,7 @@ public class Descriptions {
 			""
 			};
 	
-	protected static Color[] fieldColor = {
+	public static Color[] fieldColor = {
 			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
 			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
 			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
