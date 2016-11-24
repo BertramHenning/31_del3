@@ -113,10 +113,10 @@ public class Descriptions {
 			"It is dark night with a full moon. The Werewall has appeared from the darkness!" + "\n" + "Do you want to buy it for 4300 coins?",
 			"", // Refuge
 			"You have found a Mountain Village on journey." + "\n" + "Do you want to buy it for 4750 coins?",
-			"You have reached a beautiful city, called the South Citadel, on your journey!" + "\n" + "Do you want to buy it for 5000 coins?",
+			"You have reached a beautiful city called the South Citadel on your journey!" + "\n" + "Do you want to buy it for 5000 coins?",
 			"Arrrgh!! You have found the pirates, called 'The Buccaneers', fleet base" + "\n" + "Do you want to buy it for 4000 coins?", // Fleet
 			"You have found the Holy Palace Gates!" + "\n" + "Do you want to buy it for 5500 coins?",
-			"A Caravan approached you! You generosity forced you to spend either 4000 coins or 10% of your total assets. Choose wisely", // Tax
+			"A Caravan approached you! Your generosity forced you to spend either 4000 coins or 10% of your total assets. Choose wisely", // Tax
 			"You have entered a heavily guarded Tower!" + "\n" + "Do you want to buy it for 6000 coins?",
 			"You have found a fleet base called 'Privateer Armade'" + "\n" + "Do you want to buy it for 4000 coins?", // Fleet
 			"You have discovered a labor camp called The Pit." + "\n" + "Do you want to buy it for 2500 coins?", // Labor Camp
