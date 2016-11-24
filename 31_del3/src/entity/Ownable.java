@@ -2,8 +2,8 @@ package entity;
 
 public abstract class Ownable extends Field {
 
-	private int price;
-	private Player owner;
+	protected int price;
+	protected Player owner;
 	
 public Ownable(int price){
 	this.price = price;
