@@ -35,7 +35,7 @@ public class Controller {
 			list.movePosition(turn, cup.getSum());
 			gui.moveCar(list.getName(turn), list.getPosition(turn));
 			
-			board.getField(list.getPosition(turn) + 1).landOnField(list.getPlayer(turn));
+			board.getField(list.getPosition(turn) - 1).landOnField(list.getPlayer(turn));
 			
 			gui.displayBalance(list.getName(turn), list.getCoins(turn));
 			
