@@ -3,8 +3,11 @@ package entity;
 import boundary.Descriptions;
 import desktop_resources.GUI;
 
+/**
+ * A type of field called a fleet
+ */
 public class Fleet extends Ownable {
-
+	
 	private final int RENT_1 = 500;
 	private final int RENT_2 = 1000;
 	private final int RENT_3 = 2000;
@@ -15,10 +18,13 @@ public class Fleet extends Ownable {
 		super(price);
 		
 	}
-	
+	/**
+	 * Does what happens on a fleet field based on the owner and the player that landed there
+	 */
 	@Override
 	public void landOnField(Player player) {
 		if (owner == null && player.getCoins() > price) {
+			//Lets the player buy the field if there is no owner and the player has enough coins
 			if (GUI.getUserLeftButtonPressed(Descriptions.fieldAsk[player.getPosition() - 1], "Yes", "No")) {
 				owner = player;
 				player.addCoins(-price);
@@ -29,6 +35,7 @@ public class Fleet extends Ownable {
 		} else if (owner == player) {
 			GUI.showMessage("You have landed on your own fleet");
 		} else {
+			//Takes coins from the player and gives them to the owner based on the owners amount of fleets
 			int rent;
 			switch(owner.getFleets()){
 			case 1:
@@ -59,7 +66,6 @@ public class Fleet extends Ownable {
 
 	@Override
 	public int getRent() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 	

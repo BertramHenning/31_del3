@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 import boundary.Descriptions;
 
+/**
+ * Creates a Field array and fills it with the different types of fields 
+ */
 public class GameBoard {
 	Field[] fields = new Field[21];
 	
