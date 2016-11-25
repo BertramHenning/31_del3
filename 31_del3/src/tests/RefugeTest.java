@@ -24,13 +24,13 @@ public class RefugeTest {
 		this.refuge500 = new Refuge(500);
 		this.refuge0 = new Refuge(0);
 		this.refugeNeg100 = new Refuge(-100);
-		
+		this.p1.movePosition(11);
 	}
 	
 	@After
 	public void tearDown() throws Exception {
 		this.p1 = new Player("Lars");
-		this.p1.movePosition(11);
+	
 	}
 
 	@Test
