@@ -3,7 +3,9 @@ package boundary;
 import java.awt.Color;
 
 public class Descriptions {
-	
+
+
+	// Create Array with field names
 	public static String[] fieldNames = {
 			"Tribe Encampment",
 			"Crater",
@@ -28,6 +30,7 @@ public class Descriptions {
 			"Monastery" // Refuge
 			};	
 	
+	// Create Array with fieldValues
 	public static int[] fieldValue = {
 			1000,
 			1500,
@@ -51,7 +54,9 @@ public class Descriptions {
 			8000,
 			500 // Refuge
 			};
-		
+
+
+	// Create Array with fieldRents
 	public static int[] fieldRent = {
 			100,
 			300,
@@ -76,6 +81,7 @@ public class Descriptions {
 			0, // Refuge
 			};
 	
+	// Create Array list with field descriptions
 	public static String[] fieldDescription = {
 			"The Rent is 100 coins.",
 			"The Rent is 300 coins.",
@@ -99,7 +105,9 @@ public class Descriptions {
 			"The Rent is 4000 coins.",
 			"You have finally found piece in the Monastery and received 500 coins." // Refuge
 			};
-	
+
+
+	// Create Array with questions
 	public static String[] fieldAsk = {
 			"You have discovered a Tribe Encampment on your journey!" + "\n" + "Do you want to buy it for 1000 coins?",
 			"An extraordinary Crater has been found!" + "\n" + "Do you want to buy it for 1500 coins?",
@@ -123,7 +131,9 @@ public class Descriptions {
 			"The Royal Castle is bankrupt after several wars!" + "\n" + "Do you want to buy it for 8000 coins?",
 			""
 			};
-	
+
+
+	// Create Array with field colors
 	public static Color[] fieldColor = {
 			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
 			Color.getHSBColor((float)0.27,(float) 0.73,(float) 0.72), //territory
