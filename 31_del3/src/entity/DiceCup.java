@@ -1,30 +1,45 @@
 package entity;
 
+/**
+ * Keeps track of Dice objects
+ */
 public class DiceCup {
 	private Dice[] cup;
- 	
-public DiceCup(int amount){
-	cup = new Dice[amount];
-	for (int i = 0; i < cup.length; i++){
-		cup[i] = new Dice();
+	
+	/**
+	 * Creates an amount of Dice in a Array
+	 */
+	public DiceCup(int amount) {
+		cup = new Dice[amount];
+		for (int i = 0; i < cup.length; i++) {
+			cup[i] = new Dice();
+		}
 	}
-}
 
-public void rollDice(){
-for (int i = 0; i < cup.length; i++){
-		cup[i].roll();
+	/**
+	 * Rolls all Dice in the array
+	 */
+	public void rollDice() {
+		for (int i = 0; i < cup.length; i++) {
+			cup[i].roll();
+		}
 	}
-}
-
-public int getSum()	{
-	int sum = 0;
-	for (int i = 0; i < cup.length; i++){
-		sum += cup[i].getValue();
+	
+	/**
+	 * Gets the sum of all the Dice in the array
+	 */
+	public int getSum() {
+		int sum = 0;
+		for (int i = 0; i < cup.length; i++) {
+			sum += cup[i].getValue();
+		}
+		return sum;
 	}
-	return sum;
-}
-
-public int getFaceValue(int a){
-	return cup[a].getValue();
-}
+	
+	/**
+	 * Gets the value of a specific dice
+	 */
+	public int getFaceValue(int a) {
+		return cup[a].getValue();
+	}
 }

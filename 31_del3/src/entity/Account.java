@@ -1,10 +1,15 @@
 package entity;
 
-//Keeps track of a players coins
+/**
+ * Keeps track of a players coins
+ */
 public class Account {
 
 	private int coins;
 	
+	/**
+	 * Starts with 30000 coins
+	 */
 	public Account() {
 		coins = 30000;
 
@@ -14,7 +19,9 @@ public class Account {
 		return coins;
 	}
 
-	//Makes sure goldCoins can't drop below 0
+	/**
+	 * Makes sure goldCoins can't drop below 0
+	 */
 	public void addCoins(int coins) {
 		this.coins += coins;
 

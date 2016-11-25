@@ -3,6 +3,9 @@ package entity;
 import boundary.Descriptions;
 import desktop_resources.GUI;
 
+/**
+ * A type of field called a territory
+ */
 public class Territory extends Ownable {
 	private int rent;
 
@@ -16,9 +19,13 @@ public class Territory extends Ownable {
 		return rent;
 	}
 
+	/**
+	 * Does what happens on a territory field based on the owner and the player that landed there
+	 */
 	@Override
 	public void landOnField(Player player) {
 		if (owner == null && player.getCoins() > price) {
+			//Lets the player buy the field if there is no owner and the player has enough coins
 			if (GUI.getUserLeftButtonPressed(Descriptions.fieldAsk[player.getPosition() - 1], "Yes",
 					"No")) {
 				owner = player;
@@ -29,6 +36,7 @@ public class Territory extends Ownable {
 		} else if (owner == player) {
 			GUI.showMessage("You have landed on your own territory");
 		} else {
+			//Takes coins from the player and gives them to the owner
 			GUI.showMessage(
 					"You have landed on " + owner.toString() + "'s territory and have to pay him " + rent + " coins");
 			if (player.getCoins() > rent) {
