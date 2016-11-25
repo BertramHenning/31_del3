@@ -24,15 +24,15 @@ public class RefugeTest {
 		this.refuge500 = new Refuge(500);
 		this.refuge0 = new Refuge(0);
 		this.refugeNeg100 = new Refuge(-100);
-		
+		this.p1.movePosition(11);
 	}
 	
 	@After
 	public void tearDown() throws Exception {
 		this.p1 = new Player("Lars");
-		this.p1.movePosition(11);
+	
 	}
-
+	//Tests if a player gets 500 coins if the player lands on a refuge field which grants 500. 
 	@Test
 	public void testLandOnField500() {
 		
@@ -46,6 +46,7 @@ public class RefugeTest {
 		assertEquals(expected,actual);
 
 	}
+	//Tests if a player gets 1000 coins if he lands on a refuge field which grant 500 coins.
 	@Test
 	public void testLandOnField500twice() {
 		
@@ -60,6 +61,7 @@ public class RefugeTest {
 		assertEquals(expected,actual);
 
 	}
+	//Tests if a player get zero coins if the player lands on a refuge field which grant 0 coins.
 	@Test
 	public void testLandOnField0() {
 		
@@ -75,6 +77,7 @@ public class RefugeTest {
 	
 	
 	}
+	//Tests if a player get zero coins if the player lands on a refuge field which grant 0 coins twice.
 	@Test
 	public void testLandOnField0twice() {
 		
@@ -91,7 +94,7 @@ public class RefugeTest {
 	
 	
 	}
-	
+	//tests if the player looses 100 coins if the players lands on a refuge field which takes 100 coins.
 	@Test
 	public void testLandOnFieldNeg100() {
 		
@@ -104,6 +107,7 @@ public class RefugeTest {
 		actual = this.p1.getCoins();
 		assertEquals(expected,actual);
 	}
+	//tests if the player looses 100 coins if the players lands on a refuge field which takes 100 coins twice.
 	@Test
 	public void testLandOnFieldNeg100Twice() {
 		
